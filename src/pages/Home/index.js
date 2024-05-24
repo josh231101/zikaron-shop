@@ -1,17 +1,12 @@
 import React from "react";
-import './index.css'
+import "./index.css";
+import Banner from "../../components/Banner";
 
 const HomePage = () => {
+
   return (
     <div class="Pagina">
-      <div class="banner">
-        <div class="">
-          <button class="logo"></button>
-          <button class="Zikaron">Zikaron Jewelry</button>
-        </div>
-
-        <button class="carrito"></button>
-      </div>
+      <Banner />
       <div class="fondoimg"></div>
       <div class="pul_sil"></div>
       <div class="collar"></div>

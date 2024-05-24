@@ -1,8 +1,28 @@
 * {
     box-sizing: border-box;
   }
+
+.item-selected {
+    border: 6px solid #2ea0bc !important;
+}
   body {
     font-size: 14px;
+  }
+
+  .uploaded-img {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 480px;
+    left: 715px;
+    overflow: hidden;
+    border: none;
+  }
+  .upload-btn {
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+    opacity: 0 !important;
   }
   .shop {
     width: 100%;
@@ -17,7 +37,7 @@
   .fondo_logo {
     width: 100%;
     height: 735px;
-    background: url("../images/logo.png");
+    background: url("./images/logo.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -27,21 +47,7 @@
     left: 65px;
     overflow: hidden;
   }
-  .banner {
-    width: 1400px;
-    height: 52px;
-    background: rgba(239,234,224,1);
-    opacity: 1;
-    position: absolute;
-    top: 21px;
-    left: 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-  }
+
   .Zikaron {
     width: 143px;
     color: rgba(0,0,0,1);
@@ -60,7 +66,7 @@
   .logo {
     width: 74px;
     height: 52px;
-    background: url("../images/logo.png");
+    background: url("./images/logo.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -104,7 +110,7 @@
   .collar {
     width: 131px;
     height: 135px;
-    background: url("../images/collar.png");
+    background: url("./images/collar.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -124,7 +130,7 @@
   .pulsera_sil {
     width: 131px;
     height: 135px;
-    background: url("../images/pul_sil.png");
+    background: url("./images/pul_sil.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -144,7 +150,7 @@
   .charm {
     width: 131px;
     height: 135px;
-    background: url("../images/charm.png");
+    background: url("./images/charm.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -308,7 +314,6 @@
     cursor: pointer;
   }
   .corazonfondo {
-    width: 66px;
     height: 66px;
     background: rgba(217,217,217,1);
     opacity: 1;
@@ -324,17 +329,15 @@
     cursor: pointer;
   }
   .signocorazon {
+    display: block;
+    z-index: 10;
     width: 55px;
     height: 51px;
-    background: url("../images/corazon.png");
+    background: url("./images/corazon.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     opacity: 1;
-    position: absolute;
-    top: 238px;
-    left: 1139px;
-    overflow: hidden;
     border: none;
     cursor: pointer;
   }
@@ -375,7 +378,7 @@
   }
   .datos2 {
     width: 414px;
-    height: 362px;
+    height: 240px;
     background: rgba(231,223,209,1);
     opacity: 1;
     position: absolute;
@@ -478,7 +481,7 @@
     width: 104px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 619px;
+    top: 500px;
     left: 985px;
     font-family: Inter;
     font-weight: Regular;
@@ -492,7 +495,7 @@
     background: rgba(255,255,255,1);
     opacity: 1;
     position: absolute;
-    top: 613px;
+    top: 500px;
     left: 1139px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -501,7 +504,7 @@
     overflow: hidden;
     font-family: Inter;
     font-weight: Regular;
-    font-size: 12px;
+    font-size: 1rem;
     opacity: 1;
     text-align: left;
   }
@@ -509,7 +512,7 @@
     width: 111px;
     color: rgba(0,0,0,1);
     position: absolute;
-    top: 668px;
+    top: 548px;
     left: 985px;
     font-family: Inter;
     font-weight: Regular;
@@ -523,8 +526,9 @@
     background: rgba(255,255,255,1);
     opacity: 1;
     position: absolute;
-    top: 662px;
+    top: 548px;
     left: 1139px;
+    font-size: 2rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -532,7 +536,7 @@
     overflow: hidden;
     font-family: Inter;
     font-weight: Regular;
-    font-size: 12px;
+    font-size: 1.3rem;
     opacity: 1;
     text-align: left;
   }
@@ -758,7 +762,7 @@
     background: rgba(143,139,139,1);
     opacity: 1;
     position: absolute;
-    top: 716px;
+    top: 600px;
     left: 1100px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -780,7 +784,7 @@
   .paypal {
     width: 103px;
     height: 30px;
-    background: url("../images/paypal.png");
+    background: url("./images/paypal.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -821,9 +825,10 @@
     text-align: center;
   }
   .upload {
+    z-index: 100;
     width: 130px;
     height: 130px;
-    background: url("../images/upload.png");
+    background: url("./images/upload.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
