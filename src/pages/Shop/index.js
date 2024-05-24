@@ -183,15 +183,15 @@ const Shop = () => {
       <div class="producto"></div>
       <span class="seleccion1">Selecciona un producto:</span>
       <button
-        class={`collar ${productos.collar ? "item-selected" : ""}`}
+        class={`collar2 ${productos.collar ? "item-selected" : ""}`}
         onClick={() => setProductSelected("collar")}
       ></button>
       <button
-        class={`pulsera_sil ${productos.pulsera_sil ? "item-selected" : ""}`}
+        class={`pulsera_sil2 ${productos.pulsera_sil ? "item-selected" : ""}`}
         onClick={() => setProductSelected("pulsera_sil")}
       ></button>
       <button
-        class={`charm ${productos.charm ? "item-selected" : ""}`}
+        class={`charm2 ${productos.charm ? "item-selected" : ""}`}
         onClick={() => setProductSelected("charm")}
       ></button>
 
