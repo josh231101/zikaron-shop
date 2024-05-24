@@ -107,7 +107,7 @@
     border-bottom-right-radius: 10px;
     overflow: hidden;
   }
-  .collar {
+  .collar2 {
     width: 131px;
     height: 135px;
     background: url("./images/collar.png");
@@ -127,7 +127,7 @@
     border: none;
     cursor: pointer;
   }
-  .pulsera_sil {
+  .pulsera_sil2 {
     width: 131px;
     height: 135px;
     background: url("./images/pul_sil.png");
@@ -147,7 +147,7 @@
     border: none;
     cursor: pointer;
   }
-  .charm {
+  .charm2 {
     width: 131px;
     height: 135px;
     background: url("./images/charm.png");

@@ -9,8 +9,8 @@ const HomePage = () => {
       <Banner />
       <div class="fondoimg"></div>
       <div class="pul_sil"></div>
-      <div class="collar"></div>
       <div class="charm"></div>
+      <div class="collar"></div>
       <div class="rectangle1"></div>
       <div class="rectangle2"></div>
       <div class="couple_bracelet"></div>
